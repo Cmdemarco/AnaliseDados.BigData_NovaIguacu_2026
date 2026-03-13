@@ -19,4 +19,8 @@
 # $git clone 
 # $ git checkout -b main  
 
+# cd [nome da pasta do repositório]
+# git add [Nome da pasta]/
+# git commit -m " "
+# git push (-u) origin main
  
