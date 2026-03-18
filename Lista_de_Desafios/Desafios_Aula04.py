@@ -151,7 +151,6 @@ else:
 print(f"\nMédia final: {media:.1f}")
 print(f"Situação: {resultado}")
 
-
 # 6. Positivo ou Negativo:
 # Escreva um programa para ler um valor e escrever se é positivo ou negativo. Considere o
 # valor zero como positivo.
