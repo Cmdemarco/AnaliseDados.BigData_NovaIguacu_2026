@@ -87,7 +87,33 @@ lucro_liq = valor_recebido - custo_combustivel
 # Observação: caso o código não seja nenhum dos especificados, o produto deve ser
 # encarado como “Importado”.
 
+codigo=5
 
+match codigo:
+    case 1:
+        print("Sul")
+    case 2:
+        print("Norte")
+    case 3:
+        print("Leste")
+    case 4:
+        print("Oeste")
+    case 5:
+        print("Nordeste")
+    case 6:
+        print("Nordeste")
+    case 7:
+        print("Sudeste")
+    case 8:
+        print("Sudeste")
+    case 9:
+        print("Sudeste")
+    case 10:
+        print("Centro-Oeste")
+    case 11:
+        print("Noroeste")
+    case _:
+        print("Importado")
 
 # 5. Média do Aluno com Optativa:
 # Escreva um programa que leia as notas das duas avaliações normais e a nota da avaliação
@@ -103,9 +129,27 @@ lucro_liq = valor_recebido - custo_combustivel
 # Observação: nota optativa - o estudante decide fazer uma prova extra para melhorar o
 # resultado final.
 
+nota1= float(input("Digite a nota da primeira prova"))
+nota2= float(input("Digite a nota da segunda prova"))
+opt= abs(float(input("Digite a nota da optativa:")))
 
+if opt != -1:
+    if nota1 < nota2:
+        nota1 = opt  
+    else:
+        nota2 = opt  
 
+media = (nota1 + nota2) / 2
 
+if media >= 6.0:
+    resultado = "Aprovado"
+elif media < 3.0:
+    resultado = "Reprovado"
+else:
+    resultado = "Recuperação"
+
+print(f"\nMédia final: {media:.1f}")
+print(f"Situação: {resultado}")
 
 # 6. Positivo ou Negativo:
 # Escreva um programa para ler um valor e escrever se é positivo ou negativo. Considere o
